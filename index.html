@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>Power Gym</h2>
+
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Plans</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>POWER GYM</h1>
+        <p>Transform Your Body, Transform Your Life</p>
+        <a href="#" class="btn" onclick="joinGym()">Join Now</a>
+    </div>
+</section>
+
+<section class="features">
+    <h2>Why Choose Us?</h2>
+
+    <div class="feature-box">
+        <h3>🏋️ Modern Equipment</h3>
+        <p>Latest gym machines for better workouts.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>💪 Professional Trainers</h3>
+        <p>Experienced trainers for every goal.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>🥗 Diet Plans</h3>
+        <p>Personalized diet plans for fitness.</p>
+    </div>
+</section>
+
+<section class="plans">
+    <h2>Membership Plans</h2>
+
+    <div class="plan">
+        <h3>Basic Plan</h3>
+        <p>₹999 / Month</p>
+    </div>
+
+    <div class="plan">
+        <h3>Premium Plan</h3>
+        <p>₹1999 / Month</p>
+    </div>
+</section>
+<section class="register">
+    <h2>Join Power Gym</h2>
+  <h3>Admin Login</h3>
+
+<input type="password" id="adminPassword" placeholder="Enter Admin Password">
+<button onclick="adminLogin()">Login</button>
+
+<p id="loginStatus"></p>
+
+    <input type="text" id="name" placeholder="Enter Your Name"><br><br>
+
+    <input type="tel" id="mobile" placeholder="Enter Your Mobile"><br><br>
+
+    <input type="email" id="email" placeholder="Enter Your Email"><br><br>
+
+  <h3 id="totalMembers">👥 Total Members: 0</h3>  
+<button onclick="joinGym()">Register Now</button><p id="welcomeMessage"></p>
+  <button onclick="showMembers()">View Members</button>
+<button onclick="deleteMembers()">Delete All Members</button>
+  <input type="text" id="search" placeholder="Search by Name">
+
+<button onclick="searchMember()">Search</button>
+<div id="memberList"></div>
+</section>
+<section class="contact">
+    <h2>Contact Us</h2>
+
+    <p>📍 Rewa, Madhya Pradesh</p>
+    <p>📞 +91 9876543210</p>
+    <p>📧 powergym@gmail.com</p>
+
+    <a href="#" class="btn" onclick="joinGym()">Join Today</a>
+</section>
+
+<footer>
+    <p>© 2026 Power Gym | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

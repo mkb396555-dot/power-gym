@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#000;
+    padding:20px;
+}
+
+nav h2{
+    color:red;
+    font-size:32px;
+}
+
+nav div a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+}
+
+nav div a:hover{
+    color:red;
+}
+
+.hero{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+    position:relative;
+    z-index:1;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:24px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:red;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:8px;
+    font-size:22px;
+    display:inline-block;
+}
+
+.btn:hover{
+    background:darkred;
+}
+
+.features{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.features h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.feature-box{
+    background:#222;
+    margin:20px auto;
+    padding:30px;
+    max-width:500px;
+    border-radius:10px;
+}
+
+.feature-box h3{
+    color:red;
+    margin-bottom:15px;
+}
+
+.plans{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.plan{
+    background:#222;
+    margin:20px auto;
+    padding:30px;
+    max-width:400px;
+    border-radius:10px;
+}
+
+.plan h3{
+    color:red;
+    margin-bottom:10px;
+}
+
+.contact{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+}
+.plan{
+    background:#222;
+    padding:25px;
+    margin:20px auto;
+    width:300px;
+    border-radius:15px;
+    transition:0.3s;
+    box-shadow:0 0 10px rgba(255,0,0,0.3);
+}
+
+.plan:hover{
+    transform:scale(1.05);
+}
+
+.plan button{
+    margin-top:15px;
+    background:red;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+.register{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.register input{
+    width:300px;
+    padding:12px;
+    margin:8px;
+    border-radius:8px;
+    border:none;
+    font-size:16px;
+}
+
+.register button{
+    background:red;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.register button:hover{
+    background:darkred;
+}
