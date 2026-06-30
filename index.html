@@ -4,30 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Power Gym</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-    <h2>Power Gym</h2>
+<header>
+    <div class="logo">Power Gym</div>
 
-    <div>
+    <nav>
         <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="#">Plans</a>
-        <a href="#">Contact</a>
-    </div>
-</nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#plans">Plans</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
 <section class="hero">
     <div class="hero-content">
         <h1>POWER GYM</h1>
-        <p>Transform Your Body, Transform Your Life</p>
-        <a href="#" class="btn" onclick="joinGym()">Join Now</a>
+        <p>Transform Your Body. Transform Your Life.</p>
+
+        <a href="#plans" class="btn">Join Now</a>
     </div>
 </section>
 
-<section class="features">
+<section class="about" id="about">
+    <h2>About Power Gym</h2>
+
+    <p>
+        Welcome to <b>Power Gym</b>, where fitness meets dedication.
+        We provide modern equipment, experienced trainers, personalized workout plans, and diet guidance to help you achieve your dream body.
+    </p>
+
+    <div class="about-box">
+
+        <div>
+            <h3>500+</h3>
+            <p>Happy Members</p>
+        </div>
+
+        <div>
+            <h3>10+</h3>
+            <p>Professional Trainers</p>
+        </div>
+
+        <div>
+            <h3>5 Years</h3>
+            <p>Experience</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="features" id="features">
+
     <h2>Why Choose Us?</h2>
 
     <div class="feature-box">
@@ -44,29 +77,50 @@
         <h3>🥗 Diet Plans</h3>
         <p>Personalized diet plans for fitness.</p>
     </div>
+
 </section>
 
-<section class="plans">
+<section class="plans" id="plans">
+
     <h2>Membership Plans</h2>
 
     <div class="plan">
-        <h3>Basic Plan</h3>
-        <p>₹999 / Month</p>
+        <h3>💪 Basic Plan</h3>
+        <h4>₹999 / Month</h4>
+        <p>✔ Gym Access</p>
+        <p>✔ Cardio Area</p>
+        <button>Join Now</button>
     </div>
 
     <div class="plan">
-        <h3>Premium Plan</h3>
-        <p>₹1999 / Month</p>
+        <h3>🔥 Premium Plan</h3>
+        <h4>₹1999 / Month</h4>
+        <p>✔ Gym Access</p>
+        <p>✔ Personal Trainer</p>
+        <p>✔ Diet Plan</p>
+        <button>Join Now</button>
     </div>
+
+    <div class="plan">
+        <h3>👑 VIP Plan</h3>
+        <h4>₹2999 / Month</h4>
+        <p>✔ All Premium Features</p>
+        <p>✔ Personal Coach</p>
+        <p>✔ Nutrition Support</p>
+        <button>Join Now</button>
+    </div>
+
 </section>
 <section class="register">
+
     <h2>Join Power Gym</h2>
-  <h3>Admin Login</h3>
 
-<input type="password" id="adminPassword" placeholder="Enter Admin Password">
-<button onclick="adminLogin()">Login</button>
+    <h3>Admin Login</h3>
 
-<p id="loginStatus"></p>
+    <input type="password" id="adminPassword" placeholder="Enter Admin Password">
+    <button onclick="adminLogin()">Login</button>
+
+    <p id="loginStatus"></p>
 
     <input type="text" id="name" placeholder="Enter Your Name"><br><br>
 
@@ -74,23 +128,32 @@
 
     <input type="email" id="email" placeholder="Enter Your Email"><br><br>
 
-  <h3 id="totalMembers">👥 Total Members: 0</h3>  
-<button onclick="joinGym()">Register Now</button><p id="welcomeMessage"></p>
-  <button onclick="showMembers()">View Members</button>
-<button onclick="deleteMembers()">Delete All Members</button>
-  <input type="text" id="search" placeholder="Search by Name">
+    <h3 id="totalMembers">👥 Total Members: 0</h3>
 
-<button onclick="searchMember()">Search</button>
-<div id="memberList"></div>
+    <button onclick="joinGym()">Register Now</button>
+
+    <p id="welcomeMessage"></p>
+
+    <button onclick="showMembers()">View Members</button>
+    <button onclick="deleteMembers()">Delete All Members</button>
+
+    <input type="text" id="search" placeholder="Search by Name">
+    <button onclick="searchMember()">Search</button>
+
+    <div id="memberList"></div>
+
 </section>
-<section class="contact">
+
+<section class="contact" id="contact">
+
     <h2>Contact Us</h2>
 
     <p>📍 Rewa, Madhya Pradesh</p>
     <p>📞 +91 9876543210</p>
     <p>📧 powergym@gmail.com</p>
 
-    <a href="#" class="btn" onclick="joinGym()">Join Today</a>
+    <a href="#plans" class="btn">Join Today</a>
+
 </section>
 
 <footer>
