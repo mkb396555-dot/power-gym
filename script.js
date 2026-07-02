@@ -132,3 +132,60 @@ function updateTotalMembers() {
     document.getElementById("totalMembers").innerHTML =
         "👥 Total Members: " + members.length;
 }
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+function calculateBMI() {
+    let height = document.getElementById("height").value;
+    let weight = document.getElementById("weight").value;
+
+    if (height === "" || weight === "") {
+        document.getElementById("result").innerHTML = "Please enter height and weight";
+        return;
+    }
+
+    let bmi = weight / ((height / 100) * (height / 100));
+
+    let status = "";
+
+    if (bmi < 18.5) {
+        status = "Underweight";
+    } else if (bmi < 25) {
+        status = "Normal";
+    } else if (bmi < 30) {
+        status = "Overweight";
+    } else {
+        status = "Obese";
+    }
+
+    document.getElementById("result").innerHTML =
+        "Your BMI: " + bmi.toFixed(1) + " (" + status + ")";
+}
+
+document.getElementById("joinForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let form = document.getElementById("joinForm");
+
+let name = form.querySelector("#name").value;
+let mobile = form.querySelector("#mobile").value;
+let email = form.querySelector("#email").value;
+let plan = form.querySelector("#plan").value;document.getElementById("plan").value;
+
+    let message = `New Gym Registration
+
+Name: ${name}
+Mobile: ${mobile}
+Email: ${email}
+Plan: ${plan}`;
+
+    let phone = "916265065250"; // यहाँ अपना WhatsApp नंबर लिखो
+
+    window.open(
+        `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
+        "_blank"
+    );
+});

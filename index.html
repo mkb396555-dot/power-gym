@@ -14,12 +14,20 @@
     <div class="logo">Power Gym</div>
 
     <nav>
-        <a href="#">Home</a>
+    <h2>Power Gym</h2>
+
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#features">Features</a>
         <a href="#plans">Plans</a>
         <a href="#contact">Contact</a>
-    </nav>
+    </div>
+</nav>
 </header>
 
 <section class="hero">
@@ -89,7 +97,7 @@
         <h4>₹999 / Month</h4>
         <p>✔ Gym Access</p>
         <p>✔ Cardio Area</p>
-        <button>Join Now</button>
+        <a href="#register" class="btn">Join Now</a>
     </div>
 
     <div class="plan">
@@ -98,7 +106,7 @@
         <p>✔ Gym Access</p>
         <p>✔ Personal Trainer</p>
         <p>✔ Diet Plan</p>
-        <button>Join Now</button>
+        <a href="#register" class="btn">Join Now</a>
     </div>
 
     <div class="plan">
@@ -107,11 +115,11 @@
         <p>✔ All Premium Features</p>
         <p>✔ Personal Coach</p>
         <p>✔ Nutrition Support</p>
-        <button>Join Now</button>
+        <a href="#register" class="btn">Join Now</a>
     </div>
 
 </section>
-<section class="register">
+<section class="register" id="register">
 
     <h2>Join Power Gym</h2>
 
@@ -142,9 +150,67 @@
 
     <div id="memberList"></div>
 
-</section>
+</>
+<section class="dashboard">
+    <h2>📊 Gym Dashboard</h2>
 
-<section class="contact" id="contact">
+    <div class="dashboard-box">
+        <div>
+            <h3 id="dashboardMembers">0</h3>
+            <p>Total Members</p>
+        </div>
+
+        <div>
+            <h3>3</h3>
+            <p>Membership Plans</p>
+        </div>
+
+        <div>
+            <h3>10+</h3>
+            <p>Professional Trainers</p>
+        </div>
+
+        <div>
+            <h3>24/7</h3>
+            <p>Support</p>
+        </div>
+    </div>
+</section>
+<section class="bmi" id="bmi">
+    <h2>BMI Calculator</h2>
+
+    <input type="number" id="height" placeholder="Height (cm)">
+    <input type="number" id="weight" placeholder="Weight (kg)">
+
+    <button onclick="calculateBMI()">Calculate BMI</button>
+
+    <h3 id="result"></h3>
+</section>
+  <section class="join" id="join">
+    <h2>Join Power Gym</h2>
+
+    <form id="joinForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+
+        <input type="tel" id="mobile" placeholder="Mobile Number" required>
+      <input type="email" id="email"
+placeholder="Email Address" required>
+
+        <select id="plan" required>
+            <option value="">Select Plan</option>
+            <option>Monthly</option>
+            <option>Quarterly</option>
+            <option>Yearly</option>
+        </select>
+
+        <button type="submit">Join Now</button>
+      <p id="paymentMessage"></p>
+      <p id="successMessage"></p>
+
+      
+    </form>
+</section>
+  <section class="contact" id="contact">
 
     <h2>Contact Us</h2>
 
