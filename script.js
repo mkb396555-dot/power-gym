@@ -175,12 +175,14 @@ let mobile = form.querySelector("#mobile").value;
 let email = form.querySelector("#email").value;
 let plan = form.querySelector("#plan").value;document.getElementById("plan").value;
 
-    let message = `New Gym Registration
+    let message = `🏋️ New Gym Registration
 
-Name: ${name}
-Mobile: ${mobile}
-Email: ${email}
-Plan: ${plan}`;
+👤 Name: ${name}
+📞 Mobile: ${mobile}
+📧 Email: ${email}
+📅 Plan: ${plan}
+
+💳 Please pay using the QR code on the website and send the payment screenshot here to confirm your membership.`;
 
     let phone = "916265065250"; // यहाँ अपना WhatsApp नंबर लिखो
 
